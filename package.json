@@ -1,0 +1,39 @@
+{
+  "name": "cli-chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.ts",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "test": "jest --verbose",
+    "test-watch": "jest --verbose --watchAll",
+    "dev": "npx nodemon ./src/server.ts",
+    "start": "tsc && node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaceneSadoudi/cli-chat-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HaceneSadoudi/cli-chat-app/issues"
+  },
+  "homepage": "https://github.com/HaceneSadoudi/cli-chat-app#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.24",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "concurrently": "^7.1.0",
+    "eslint": "^8.13.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "socket.io": "^4.4.1"
+  }
+}
